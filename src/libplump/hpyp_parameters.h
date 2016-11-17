@@ -220,7 +220,7 @@ class GradientParameters : public IParameters {
     d_vec sigmoid_discount_gradient;
     double log_alpha_gradient;
     static const int mini_batch_size = 100;
-    static const double default_step_size = 1e-5;
+    static constexpr double default_step_size = 1e-5;
 
     DISALLOW_COPY_AND_ASSIGN(GradientParameters);
 };

@@ -21,7 +21,7 @@ model = libplump.HPYPModel(seq, nodeManager, restaurant, parameters, numTypes)
 print model.computeLosses(0,len(seq))
 for i in range(seq.size()):
   print model.toString()
-  model.runGibbsSampler()
+  model.runGibbsSampler(False)
 
 print "Predictions after training:"
 for i in range(len(seq)):
